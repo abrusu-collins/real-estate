@@ -1,0 +1,279 @@
+
+
+*{
+	margin:0;
+	padding: 0;
+
+	font-family: 'Roboto', sans-serif;
+}
+html{
+	background-color:#f0f3f5;
+
+}
+body{
+	color: #fcfeff;
+}
+img{
+	width:100%;
+}
+
+
+
+a {
+  color: #fcfeff;
+}
+
+/* navbar */
+
+.header {
+  background-color: #27476e;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  top:0;
+
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #27476e;
+
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right:1px solid #001d4a;
+  text-decoration: none;
+  transition: 1s ease-in-out;
+}
+
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #001d4a;
+}
+
+.header .logo {
+  display: block;
+  float: left;
+  font-size: 2rem;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+
+  transition: max-height .2s ease-out;
+
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+
+}
+
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+    background-color: #fcfeff;
+
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+    background-color: #fcfeff;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+ 
+
+@media (min-width: 815px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+    border-right: 1px solid #001d4a;
+  }
+
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+/*end of navbar*/
+
+
+
+
+/*pic*/
+.box{
+
+background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('third.jpg');
+height:100vh;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-attachment: fixed;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 2.5rem;
+flex-direction: column;
+text-align: center;
+}
+
+.first,.second{
+
+  font-family: 'Sansita Swashed', cursive;
+}
+
+.fa-angle-double-down{
+  margin-top: 20px;
+  animation:bounce 1.5s  infinite;
+}
+
+
+@-webkit-keyframes bounce {
+    0%,  
+    100% {
+       -webkit-transform: translateY(0);
+    } 
+    50% {
+        -webkit-transform: translateY(-30px);
+    }
+}
+
+
+/*end of pic*/
+
+
+
+/*qualities*/
+
+.qualities{
+  font-size: 1.5rem;
+  text-align: center;
+  border-top: 10px solid #27476e;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 1rem;
+  padding: 2rem;
+  margin: 0 auto;
+  background-color: #fcfeff;
+  color:#27476e;
+}
+/*end of qualities*/
+
+/*end*/
+.end a{
+  font-size: 3rem;
+  color:#27476e;
+  width:7%;
+  padding: 10px;
+}
+.end{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/*media queries*/
+
+@media (max-width: 725px) {
+.qualities{
+  grid-template-columns: 100%;
+
+}
+.quality1, .quality2, .quality3{
+  width:60%;
+  margin: auto;
+}
+}
+
+@media (max-width: 643px) {
+.first, .second{
+  font-size: 1.6rem;
+}
+
+
+@media (max-width: 550px) {
+.quality1, .quality2, .quality3{
+  width:80%;
+  margin: auto;
+}
+}
+
+@media (max-width: 340px) {
+.header .logo{
+  font-size: 1.7rem;
+  }}
