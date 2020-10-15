@@ -6,3 +6,6 @@ $('.fa').on('click',function(){
 	},900);
 });
 
+document.querySelector('.toggler').onclick = () => {
+  document.querySelector('.nav').classList.toggle('open');
+}
