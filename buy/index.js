@@ -1,8 +1,8 @@
-$('.fa').on('click',function(){
-	const Qualities=$('#qualities').position().top;
+$('#contact').on('click',function(){
+	const Cont=$('#cont').position().top;
 
 	$('html,body').animate({
-		scrollTop:Qualities
+		scrollTop:Cont
 	},900);
 });
 
