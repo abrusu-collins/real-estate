@@ -7,8 +7,10 @@
 	font-family: 'Roboto', sans-serif;
 }
 html{
-	background-color:#FEFAF4  ;
+	  background-image:linear-gradient(rgba(254, 250, 244,.9),rgba(254, 250, 244,.9)) ,url('handshake.png'); 
 color: #fcfeff;
+background-position:center;
+background-size: cover;
 }
 body{
 	
@@ -132,6 +134,7 @@ img{
 /*buy*/
 .buy{
    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url('teo-duldulao-4op9_2Bt2Eg-unsplash.jpg');
+
 height:40vh;
 background-position:center;
 background-size: cover;
@@ -151,16 +154,17 @@ font-size: 3rem;
 .inside{
   color: #D98880;
  display: grid;
-  grid-template-columns: .7fr 2fr;
-  grid-gap: 2rem;
-  width:80%;
-  margin:20px auto;
-}
-.only{
-  display: grid;
  
-  grid-gap: 1rem;
+  grid-gap: .6rem;
+  width:80%;
+  margin:90px auto;
+  padding: 30px;
+  background-color: white;
+  margin-top: -40px;
+  border-radius: 10px;
+
 }
+
 
 /* end of inside*/
 
@@ -488,7 +492,7 @@ font-size: 3rem;
 
 
 
-/*media queries*/
+/*media queries
 @media(max-width:1304px){
 .inside{
 grid-template-columns: .8fr 2fr;
@@ -603,7 +607,7 @@ font-size: .8rem;
 
 
 
-
+*/
 
 
 

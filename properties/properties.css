@@ -159,11 +159,12 @@ background-attachment: fixed;
 display: grid;
 grid-template-columns: repeat(3,1fr);
 grid-gap: 2rem;
-margin-top: 30px;
+
 padding: 30px;
 background-color: #f8f9f9;
 width:100%;
-margin: auto;
+margin:40px auto;
+
 }
 .properties a{
   color:inherit;
